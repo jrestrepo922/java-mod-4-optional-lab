@@ -12,6 +12,11 @@ public class Main {
         Optional<String> optAuthor = Book.getAuthor(bookName);
 
         // write your code here
+        if(optAuthor.isPresent()){
+            System.out.println(bookName + " written by " + optAuthor.get());
+        } else {
+            System.out.println("Unknown");
+        }
     }
 }
 
